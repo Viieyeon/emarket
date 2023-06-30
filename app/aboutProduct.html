@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Emarket</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner row mt-4">
+                <button class="header-burger col-lg-1">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="logo col-lg-4">
+                    <a href="index.html" class="logo-link"><img src="images/logo.png" alt="logo" class="logo-img"></a>
+                </div>
+                <div class="header__search col-lg-6">
+                    <img src="images/search.png" alt="search" class="icon__search">
+                    <div class="header__input">
+                        <input type="text" placeholder="Я ищу..." id="headerSearch">
+                    </div>
+                    <img src="images/clear-icon.png" alt="clear" class="icon__clear">
+                </div>
+                <a href="#" class="basket col-lg-1">
+                    <img src="images/bac.png" alt="basket">
+                </a>
+            </div>
+            <div class="header__menu">
+                <ul class="header__list">
+                    <a href="#" class="list-link">
+                        <li class="list__item-title">
+                            Категория
+                        </li>
+                    </a>
+                    <a href="#" class="list-link">
+                        <li class="list__item-title">
+                            Категория
+                        </li>
+                    </a>
+                    <a href="#" class="list-link">
+                        <li class="list__item-title">
+                            Категория
+                        </li>
+                    </a>
+                </ul>
+                <img src="images/burger-end.svg" alt="off" class="burger__off">
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="aboutProduct">
+            <div class="container">
+                <div class="bread row">
+                    <div class="bread-crumbs col-lg-12">
+                        <a href="#">Главная</a> <span>></span> <a href="#">Категория</a><span>></span> <a
+                            href="#">Товар</a>
+                    </div>
+                </div>
+                <div class="about__inner row">
+                    <div class="about__slider col-lg-5">
+                        <div class="gallery__photo-full">
+                            <img class="full-photo" src="images/photo-1.png" alt="Фото большое">
+                        </div>
+                        <div class="gallery__photo-previews">
+                            <button class="gallery__photo-preview" type="button">
+                                <img src="images/photo-1.png" alt="Превью с ноутбуком">
+                            </button>
+                            <button class="gallery__photo-preview" type="button">
+                                <img src="images/photo-2.png" alt="Превью с микрофоном">
+                            </button>
+                            <button class="gallery__photo-preview" type="button">
+                                <img src="images/photo-3.png" alt="Превью с клавиатурой">
+                            </button>
+                            <button class="gallery__photo-preview" type="button">
+                                <img src="images/photo-4.png" alt="Превью с табличкой">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="about__info offset-lg-1 col-lg-5">
+                        <h1 class="about__title">
+                            Название товара
+                        </h1>
+                        <p class="about__text">
+                            Если Вы любитель черно - белых тонов в интерьере – обратите внимание на коллекцию плитки
+                            «Black&White» от Cersanit. Скомпоновав ее с остальными вариантами этой серии, Вы легко
+                            создадите нужный дизайн. Прежде всего данная плитка привлечет внимание сдержанным внешним
+                            видом – при укладке создается приятный глазу узор. Такую облицовку можно использовать как в
+                            составе коллекции, так и отдельно. Модель выполнена из высококачественной керамики и покрыта
+                            матовой глазурью. Плитка не требует особенного ухода, практична в эксплуатации, прекрасно
+                            смотрится как в современном, так и в классическом интерьере.
+                        </p>
+                        <div class="about__status d-flex">
+                            <span class="about__availability">
+                                Наличие: <span class="availability">В наличии</span>
+                            </span>
+                            <span class="about__brand">
+                                Бренд: <span class="brand">Cersanit</span>
+                            </span>
+                        </div>
+                        <span class="about__price">
+                            1 234 ₽
+                        </span>
+                        <div class="about__buttons">
+                            <div class="number__button">
+                                <span class="change minus min">
+                                    <span>-</span>
+                                </span>
+                                <input type="text" name="productСount" value="1" disabled="">
+                                <span class="change plus">
+                                    <span>+</span>
+                                </span>
+                            </div>
+                            <div class="add__button btn">
+                                Добавить в корзину
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="productInfo">
+            <div class="container">
+                <div class="productInfo__inner row">
+                    <ul class="tabs__container offset-lg-3 col-lg-6">
+                        <li data-tab="tab-1" class="tab__title">Описание</li>
+                        <li data-tab="tab-2" class="tab__title">Характеристики</li>
+                    </ul>
+                    <div class="tab__wrapper col-lg-12">
+                        <div id="tab-1" class="tab__content hidden__tab">
+                            <p>Если Вы любитель черно - белых тонов в интерьере – обратите внимание на коллекцию плитки
+                                «Black&White» от Cersanit. Скомпоновав ее с остальными вариантами этой серии, Вы легко
+                                создадите нужный дизайн. Прежде всего данная плитка привлечет внимание сдержанным
+                                внешним видом – при укладке создается приятный глазу узор. Такую облицовку можно
+                                использовать как в составе коллекции, так и отдельно. Модель выполнена из
+                                высококачественной керамики и покрыта матовой глазурью. Плитка не требует особенного
+                                ухода, практична в эксплуатации, прекрасно смотрится как в современном, так и в
+                                классическом интерьере.
+                            </p>
+                        </div>
+                        <div id="tab-2" class="tab__content hidden__tab specifications">
+                            <table class="table">
+                                <tr class="table__row">
+                                    <th class="table__title">Тип поверхности</th>
+                                    <td class="table__d">Матовая</td>
+                                </tr>
+                                <tr class="table__row">
+                                    <th class="table__title">Стиль</th>
+                                    <td class="table__d">Black&White</td>
+                                </tr>
+                                <tr class="table__row">
+                                    <th class="table__title">Материал</th>
+                                    <td class="table__d">керамика</td>
+                                </tr>
+                                <tr class="table__row">
+                                    <th class="table__title">Размер</th>
+                                    <td class="table__d">200х600x9</td>
+                                </tr>
+                                <tr class="table__row">
+                                    <th class="table__title">Форма</th>
+                                    <td class="table__d">прямоугольная</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner row">
+                <div class="footer__list col-lg-3">
+                    <ul class="list">
+                        <a href="#" class="list-link">
+                            <li class="list__item-title">
+                                Покупатели
+                            </li>
+                        </a>
+                        <a href="#" class="list-link">
+                            <li class="list__item">
+                                Как сделать заказ
+                            </li>
+                        </a>
+                        <a href="#" class="list-link">
+                            <li class="list__item">
+                                Способы оплаты
+                            </li>
+                        </a>
+                        <a href="#" class="list-link">
+                            <li class="list__item">
+                                Доставка
+                            </li>
+                        </a>
+                        <a href="#" class="list-link">
+                            <li class="list__item">
+                                Возврат товаров
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="footer__list col-lg-3">
+                    <ul class="list">
+                        <a href="#" class="list-link">
+                            <li class="list__item-title">
+                                Партнеры
+                            </li>
+                        </a>
+                        <a href="#" class="list-link">
+                            <li class="list__item">
+                                Продажа на площадке
+                            </li>
+                        </a>
+                        <a href="#" class="list-link">
+                            <li class="list__item">
+                                Курьерам
+                            </li>
+                        </a>
+                        <a href="#" class="list-link">
+                            <li class="list__item">
+                                Партнерские точки выдачи
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="footer__list col-lg-3">
+                    <ul class="list">
+                        <a href="#" class="list-link">
+                            <li class="list__item-title">
+                                Компания
+                            </li>
+                        </a>
+                        <a href="#" class="list-link">
+                            <li class="list__item">
+                                О нас
+                            </li>
+                        </a>
+                        <a href="#" class="list-link">
+                            <li class="list__item">
+                                Реквизиты
+                            </li>
+                        </a>
+                        <a href="#" class="list-link">
+                            <li class="list__item">
+                                Контакты
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="footer__list col-lg-3">
+                    <ul class="list">
+                        <a href="#" class="list-link">
+                            <li class="list__item-title">
+                                Мы в соцсетях
+                            </li>
+                        </a>
+                        <a href="#" class="list-link">
+                            <li class="list__item">
+                                Вконтакте
+                            </li>
+                        </a>
+                        <a href="#" class="list-link">
+                            <li class="list__item">
+                                Одноклассники
+                            </li>
+                        </a>
+                        <a href="#" class="list-link">
+                            <li class="list__item">
+                                YouTube
+                            </li>
+                        </a>
+                        <a href="#" class="list-link">
+                            <li class="list__item">
+                                Телеграм
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="js/main.min.js"></script>
+</body>

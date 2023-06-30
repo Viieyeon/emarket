@@ -39,7 +39,7 @@
             </div>
             <div class="header__menu">
                 <ul class="header__list">
-                    <a href="catalog.html" class="list-link">
+                    <a href="#" class="list-link">
                         <li class="list__item-title">
                            Категория
                         </li>
@@ -59,40 +59,47 @@
             </div>
         </div>
     </header>
+
     <main class="main">
-        <section class="main__slaider">
+        <section class="category">
             <div class="container">
-                <div class="slaider__inner row col-lg-12">
-                    <div id="carouselExampleIndicators" class="carousel slide">
-                        <div class="carousel-indicators">
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                        </div>
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="images/slaid.jpg" class="slaid" alt="images">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="images/slaid.jpg" class="slaid" alt="images">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="images/slaid.jpg" class="slaid" alt="images">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="images/slaid.jpg" class="slaid" alt="images">
-                          </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Предыдущий</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Следующий</span>
-                        </button>
-                      </div>
+                <div class="bread row">
+                    <div class="bread-crumbs col-lg-12">
+                        <a href="#">Главная</a> <span>></span> <a href="#">Категория</a>
+                    </div>
+                </div>
+                <div class="category__inner row">
+                    <div class="category__left col-lg-4">
+                        <h2 class="category__title">
+                            Категория
+                        </h2>
+                        <ul class="category__list">
+                            <a href="#" class="category__link">
+                                <li class="category__item">
+                                    Одежда
+                                </li>
+                            </a>
+                            <a href="#" class="category__link">
+                                <li class="category__item">
+                                    Техника
+                                </li>
+                            </a>
+                            <a href="#" class="category__link">
+                                <li class="category__item">
+                                    Дом
+                                </li>
+                            </a>
+                            <a href="#" class="category__link">
+                                <li class="category__item">
+                                    Зоотовары
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="category__right col-lg-8">
+                        <img src="images/category.jpg" alt="images">
+                    </div>
+                
                 </div>
             </div>
         </section>
@@ -318,10 +325,9 @@
             </div>
         </div>
     </footer>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
     <script src="js/main.min.js"></script>
 </body>
-
-</html>
